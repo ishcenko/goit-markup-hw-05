@@ -181,6 +181,46 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
+/* Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.4);
+}
+/* .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+} */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    height: 576px;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.btn-close {
+    position: relative;
+    top: 24px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal > .btn-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    /* margin: 0; */
+}
 .visually-hidden {
     color: rgba(0, 0, 0, 0);
     position: absolute;
