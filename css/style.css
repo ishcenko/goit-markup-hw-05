@@ -104,7 +104,7 @@ img {
     color: var(--dark);
     position: relative;
     transition-property: color;
-    transition-duration: 2550ms;
+    transition-duration: 250ms;
     transition-timing-function: var(--hov-foc-cubic);
 }
 .nav-link:hover {
