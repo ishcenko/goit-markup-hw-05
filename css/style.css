@@ -574,55 +574,49 @@ img {
 }
 
 /* оверлейн */
-.portfolio-overley {
-
-}
-.overley {
-    /* position: relative; */
-    
-}
 .img-overley {
     position: relative;
-    /* width: 100%; */
-    /* height: 100%; */
 }
 .overley-card {
     position: absolute;
-    /* bottom: 0; */
-    /* right: 0; */
-    /* content: ""; */
-    /* position: relative; */
+    content: "";
     bottom: 0;
     left: 0;
-    /* width: 100%; */
-    /* height: 100%;  */
+    width: 100%;
+    height: 100%; 
     display: flex;
-    /* width: 296; */
-    /* height: 96px; */
-    
-}
-.img-overley {
-
+    opacity: 0;
 }
 .text-card {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--light);
-    /* position: absolute ; */
-    /* display: flex; */
+    display: flex;
     background: var(--primary-brand);
     outline: 2px solid #000;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* width: 296px; */
-    /* height: 96px; */
-    /* padding: 40px 32px; */
-    /* margin: 0 auto; */
+    width: 100%;
+    padding: 40px 32px;
+    margin: 0 auto;
 
 }
-.overley-card:hover {
-
+.card-list:hover .overley-card {
+    opacity: 1;
+    transition: 250ms ;
+}
+.card-list:hover::before {
+    opacity: 1;
+}
+.img-overley::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-brand);
+    opacity: 0 ;
 }
 /* footer */
 .footer {
