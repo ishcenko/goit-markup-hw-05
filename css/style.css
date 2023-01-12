@@ -599,7 +599,7 @@ img {
 
 }
 .card-list:hover .overley-card {
-    opacity: 1;
+    /* opacity: 1; */
     transform: translateY(-100%);
     transition: var(--time-animation) var(--hov-foc-cubic) ;
 } 
