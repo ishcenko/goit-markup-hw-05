@@ -570,47 +570,43 @@ img {
 /* оверлейн */
 .img-overley {
     position: relative;
+    overflow: hidden;
 }
 .overley-card {
     position: absolute;
     content: "";
-    bottom: 0;
+    top: 100%;
     left: 0;
     width: 100%;
     height: 100%; 
     display: flex;
-    opacity: 0;
+    /* opacity: 0; */
 }
 .text-card {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--light);
     display: flex;
     background: var(--primary-brand);
-    outline: 2px solid #000;
     width: 100%;
     padding: 40px 32px;
     margin: 0 auto;
+    opacity: 1;
 
 }
 .card-list:hover .overley-card {
     opacity: 1;
-    transition: var(--time-animation) ;
-}
-.card-list:hover::before {
-    opacity: 1;
-}
+    transform: translateY(-100%);
+    transition: var(--time-animation) var(--hov-foc-cubic) ;
+} 
+
 .img-overley::before {
-    display: inline-block;
+    display: flex;
     position: absolute;
     content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--primary-brand);
-    opacity: 0 ;
+    top: 0;
+    left: 0;    
 }
 /* footer */
 .footer {
