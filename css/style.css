@@ -583,6 +583,7 @@ img {
     height: 100%; 
     display: flex;
     /* opacity: 0; */
+    transition: var(--time-animation);
 }
 .text-card {
     font-size: 16px;
@@ -593,8 +594,8 @@ img {
     background: var(--primary-brand);
     width: 100%;
     padding: 40px 32px;
-    margin: 0 auto;
-    opacity: 1;
+    /* margin: 0 auto; */
+    /* opacity: 1; */
 
 }
 .card-list:hover .overley-card {
@@ -602,13 +603,14 @@ img {
     transform: translateY(-100%);
     transition: var(--time-animation) var(--hov-foc-cubic) ;
 } 
-
 .img-overley::before {
     display: flex;
     position: absolute;
     content: "";
     top: 0;
-    left: 0;    
+    left: 0;  
+    transform: translateY(-100%);
+    transition: var(--time-animation) var(--hov-foc-cubic);
 }
 /* footer */
 .footer {
